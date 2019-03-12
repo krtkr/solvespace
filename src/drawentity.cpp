@@ -585,7 +585,7 @@ void Entity::Draw(DrawAs how, Canvas *canvas) {
                     stroke.width = 2;
                     double s = camera.scale;
                     double h = 60 - camera.height / 2.0;
-                    double w = 60 - camera.width  / 2.0;
+                    double w = -60 + camera.width  / 2.0;
                     tail = camera.projRight.ScaledBy(w/s).Plus(
                            camera.projUp.   ScaledBy(h/s)).Minus(camera.offset);
                 } else {
